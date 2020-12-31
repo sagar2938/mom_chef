@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="4dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circular_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/mom1"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/circular_iv"
+                  android:text="Product Name"
+                  android:textStyle="bold"
+                  android:fontFamily="serif"
+                  android:textColor="@color/black"
+                  android:id="@+id/product_name_tv"
+                  android:textSize="@dimen/small_txt"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/circular_iv"
+                  android:layout_below="@+id/product_name_tv"
+                  android:text="Model Number"
+                  android:id="@+id/modelNo_tv"
+                  android:fontFamily="serif"
+                  android:textColor="@color/dark_grey"
+                  android:textSize="@dimen/small_txt"
+                  android:layout_marginTop="3dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginBottom="5dp"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/circular_iv"
+                  android:layout_below="@+id/modelNo_tv"
+                  android:text="Age of Product"
+                  android:id="@+id/productAge_tv"
+                  android:fontFamily="serif"
+                  android:textSize="@dimen/small_txt"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="20dp"
+        />
+
+
+        <LinearLayout
+                android:id="@+id/separate_ll"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/productAge_tv"
+                android:background="@color/bg_separator"
+                android:orientation="horizontal"
+                android:layout_height="1dp">
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+
+                      android:id="@+id/order_ll"
+                      android:layout_below="@+id/separate_ll">
+
+            <TextView android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight=".5"
+                      android:text="30/12/2018"
+                      android:textAlignment="center"
+                      android:id="@+id/validityPeriod_tv"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/small_txt"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginBottom="10dp"/>
+
+            <View android:layout_width="1dp"
+                  android:background="@color/bg_separator"
+                  android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight=".5"
+                      android:text="CRNB0005131"
+                      android:textAlignment="center"
+                      android:id="@+id/orderid_tv"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/small_txt"
+                      android:padding="5dp"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/separate1_ll"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/order_ll"
+                android:background="@color/bg_separator"
+                android:orientation="horizontal"
+                android:layout_height="1dp">
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/order_ll1"
+                      android:layout_below="@+id/separate1_ll">
+
+            <TextView android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight=".5"
+                      android:text="30/12/2018"
+                      android:textAlignment="center"
+                      android:id="@+id/validityStart_tv"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/small_txt"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginBottom="10dp"/>
+
+            <View android:layout_width="1dp"
+                  android:background="@color/bg_separator"
+                  android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight=".5"
+                      android:text="30/12/2018"
+                      android:textAlignment="center"
+                      android:id="@+id/puchasedOn_tv"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/small_txt"
+                      android:padding="5dp"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

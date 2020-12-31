@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout
+            android:id="@+id/terms_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="Variation of Terms"/>
+
+        <TextView
+                android:id="@+id/term_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/light_grey"
+                android:text="Company Name is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis."/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Assignment"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/light_grey"
+                android:text="The Company Name is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.">
+
+        </TextView>
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Entire Agreement"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/light_grey"
+                android:text="These Terms constitute the entire agreement between Company Name and you in relation to your use of this Website, and supersede all prior agreements and understandings.">
+        </TextView>
+
+        <Button android:textColor="@color/white"
+                android:id="@+id/terms_bt"
+                android:visibility="visible"
+                android:background="@drawable/roundcorner_button"
+                android:layout_width="match_parent"
+                android:layout_height="35.0dip"
+                android:layout_margin="10.0dip"
+                android:text="Agree"
+                android:layout_below="@+id/terms_ll"
+                android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

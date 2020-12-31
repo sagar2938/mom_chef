@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:gravity="fill|end|start"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        <LinearLayout
+                android:id="@+id/selectreason_ll"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20.0dip">
+            <TextView android:textSize="16.0dip"
+                      android:textColor="@color/black"
+                      android:id="@+id/inputvalue_tv"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="0.0dip"
+                      android:text="Please Verify the otp for the online payment"
+                      android:textAlignment="center"/>
+
+            <com.goodiebag.pinview.Pinview
+                    android:id="@+id/pinview"
+                    app:pinBackground="@drawable/cell_border_botton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:pinWidth="40dp"
+                    app:pinHeight="40dp"
+                    app:pinLength="4"
+                    app:cursorVisible="false"
+                    app:forceKeyboard="true"
+                    app:hint="0"
+                    app:inputType="number"
+                    app:password="false"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/verify_ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundcorner_button"
+                android:layout_width="80dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="50dp">
+            <TextView
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:text="Verify OTP Received"
+                    android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/change_ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundcorner_button"
+                android:layout_width="80dp"
+                android:layout_height="50.0dip">
+            <TextView
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:text="Change Payment "
+                    android:textAlignment="center"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/white">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/house_tv"
+                  android:layout_below="@+id/gender_tv"
+                  android:text="House No."
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/gender_name_tv"
+                  android:id="@+id/house_name_tv"
+                  android:text="117"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/locality_tv"
+                  android:layout_below="@+id/house_tv"
+                  android:text="Locality"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/house_name_tv"
+                  android:id="@+id/locality_name_tv"
+                  android:text="Chattarpur"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/city_tv"
+                  android:layout_below="@+id/locality_tv"
+                  android:text="City"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/locality_name_tv"
+                  android:id="@+id/city_name_tv"
+                  android:text="New Delhi"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pincode_tv"
+                  android:layout_below="@+id/city_tv"
+                  android:text="Pin Code"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/city_name_tv"
+                  android:id="@+id/pincode_name_tv"
+                  android:text="201301"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/state_tv"
+                  android:layout_below="@+id/pincode_tv"
+                  android:text="State"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/pincode_name_tv"
+                  android:id="@+id/state_name_tv"
+                  android:text="Delhi"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_details"
+                android:id="@+id/change_details_bt"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:background="@drawable/cell_border_botton"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_alignParentBottom="true"
+        />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

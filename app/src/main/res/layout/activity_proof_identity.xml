@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ifsc_tv"
+                  android:visibility="visible"
+                  android:text="IFSC Code"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ifsc_code_tv"
+                  android:text=""
+                  android:visibility="visible"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/gend_tv"
+                  android:visibility="gone"
+                  android:layout_below="@+id/ifsc_tv"
+                  android:text="Gender"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/ifsc_tv"
+                  android:id="@+id/gender_tv"
+                  android:visibility="gone"
+                  android:text=""
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/idtype_tv"
+                  android:layout_below="@+id/gend_tv"
+                  android:text=""
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/idtypenum_tv"
+                  android:layout_below="@+id/gend_tv"
+                  android:text=""
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/nameinid_tv"
+                  android:layout_below="@+id/idtype_tv"
+                  android:text="Name"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/idtype_tv"
+                  android:id="@+id/useridname_tv"
+                  android:text=""
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/text_size_medium"
+                  android:layout_margin="10dp"/>
+
+
+        <ImageView android:layout_width="180dp"
+                   android:layout_height="180dp"
+                   android:layout_centerInParent="true"
+                   android:id="@+id/frontid_iv"
+                   android:padding="5dp"
+                   android:layout_margin="20dp"
+                   android:background="@drawable/dotted_boundry"
+                   android:layout_below="@+id/useridname_tv"/>
+
+        <ImageView android:layout_width="180dp"
+                   android:layout_height="180dp"
+                   android:visibility="gone"
+                   android:id="@+id/backid_iv"
+                   android:background="@drawable/cell_border_edittext"
+                   android:layout_margin="20dp"
+                   android:src="@drawable/water_2"
+                   android:layout_below="@+id/frontid_iv"/>
+
+
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_details"
+                android:id="@+id/change_details_bt"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:background="@drawable/cell_border_botton"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_alignParentBottom="true"
+        />
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

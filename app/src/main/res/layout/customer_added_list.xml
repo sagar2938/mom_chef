@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/main_rl"
+              android:layout_marginBottom="5dp"
+              android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="4dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circular_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/img"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toRightOf="@+id/circular_iv"
+                      android:layout_below="@+id/newlead"
+                      android:text="Shailesh Diwakar"
+                      android:textStyle="bold"
+                      android:fontFamily="serif"
+                      android:textColor="@color/black"
+                      android:id="@+id/cutomer_name"
+                      android:textSize="@dimen/small_txt"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="20dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toRightOf="@+id/circular_iv"
+                      android:layout_below="@+id/cutomer_name"
+                      android:text="Address"
+                      android:id="@+id/approved_tv"
+                      android:fontFamily="serif"
+                      android:textColor="@color/dark_grey"
+                      android:textSize="@dimen/small_txt"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginBottom="5dp"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toRightOf="@+id/circular_iv"
+                      android:layout_below="@+id/approved_tv"
+                      android:text="117/3A/3 Sulem Sarai"
+                      android:id="@+id/address_tv"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/small_txt"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginBottom="10dp"
+            />
+
+
+            <LinearLayout
+                    android:id="@+id/separate1_ll"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/address_tv"
+                    android:background="@color/bg_separator"
+                    android:orientation="horizontal"
+                    android:layout_height="1dp">
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="2dp"
+                          android:id="@+id/order_ll1"
+                          android:layout_below="@+id/separate1_ll">
+
+                <LinearLayout
+                        android:id="@+id/call_now_ll"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".5">
+
+                    <ImageView
+                            android:id="@+id/location_ripple1"
+                            android:layout_width="30dp"
+                            android:padding="4dp"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_horizontal"
+                            android:layout_height="40dp"
+                            android:src="@drawable/call_icon_1"
+                    />
+
+                    <TextView android:layout_width="100dp"
+                              android:layout_height="wrap_content"
+                              android:text="Call Now"
+                              android:textAlignment="center"
+                              android:layout_gravity="center_vertical"
+                              android:id="@+id/callnow_tv"
+                              android:fontFamily="serif"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="@dimen/small_txt"/>
+
+
+                </LinearLayout>
+
+                <View android:layout_width="1dp"
+                      android:background="@color/bg_separator"
+                      android:layout_height="match_parent"/>
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_weight=".5"
+                                android:layout_height="wrap_content">
+
+
+
+                    <TextView android:layout_width="150dp"
+                              android:layout_height="wrap_content"
+                              android:text="Product Added ( 20 )"
+                              android:textColor="@color/colorPrimary"
+                              android:textAlignment="center"
+                              android:id="@+id/customeradded_tv"
+                              android:fontFamily="serif"
+                              android:textSize="13dp"
+                              android:padding="5dp"
+                              android:layout_marginTop="3dp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

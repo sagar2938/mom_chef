@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">MOM CHEF</string>
+    <string name="title_home">New Leads</string>
+    <string name="title_dashboard">Ongoing</string>
+    <string name="title_targets">Targets</string>
+    <string name="title_notifications">Menu</string>
+    <string name="title_activity_main">MOM CHEF</string>
+    <string name="sign_in_login">Log In / Sign Up</string>
+    <string name="otpString">Get OTP</string>
+    <string name="sign_in_complete">Complete</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="newleads">New Leads</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="newtargets">New Targets</string>
+    <string name="title_verification">" "Log In</string>
+    <string name="title_activity_profile">" "Profile</string>
+    <string name="title_activity_choose">" "Choose your Profile Picture</string>
+    <string name="title_activity_identity">" "Identity Proof</string>
+    <string name="idstring">What ID would you like to add ?</string>
+    <string name="confirmstring">Confirm</string>
+    <string name="title_activity_upload">" "Upload Identity</string>
+    <string name="title_activity_details">" "Personal Details</string>
+    <string name="title_activity_curret">" "Current Address</string>
+    <string name="title_identity_details">" "Identity Proof</string>
+    <string name="change_details">Change details</string>
+    <string name="title_rating">My Rating</string>
+    <string name="title_declaration">Declaration</string>
+    <string name="review_string">Thanks for the information. Once your profile goes live we will verify your details and
+        current address through our agencies.
+    </string>
+    <string name="award_string">Award Proof</string>
+    <string name="title_activity_call_management">CallManagement</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_call_management_acitvity">CallManagementAcitvity</string>
+    <string name="tab_text_1">Pending</string>
+    <string name="tab_text_2">Ongoing</string>
+    <string name="tab_text_3">History</string>
+    <string name="title_activity_schedule_service">Schedule Service</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+
+    </string>
+    <string name="scheduleservice">Schedule your service</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="referearn">Get your customers joined in MOM vendor</string>
+    <string name="refermesaage">Earn life time regular income with this relationship !</string>
+    <string name="referalcode">My referral code is.</string>
+    <string name="title_addengineer">Add Engineer</string>
+    <string name="title_signup">Sign Up</string>
+    <string name="texton">Online</string>
+    <string name="textoff">Offline</string>
+    <string name="from">From</string>
+    <string name="estimated_distance">Product Name</string>
+    <string name="estimated_fare">Estimate Cost</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_order1">New Order</string>
+    <string name="please_confirm">Are you sure want to cancel this order </string>
+    <string name="title_skills">Add Skills</string>
+    <string name="sign_confirm">Confirm</string>
+    <string name="title_time">Pick Date Time</string>
+    <string name="title_order">Order Details</string>
+    <string name="tab_ongoing">All Leads</string>
+    <string name="tab_history">Your Leads</string>
+    <string name="new_orde">Booked Appointment</string>
+    <string name="title_work">Order Status</string>
+    <string name="title_route">Eng. Route Plan</string>
+
+    <string name="google_directions_key">AIzaSyDoNLdPwYDEFvXsxAQtfNk1yJZetjDniEw</string>
+    <string name="title_job">Job Completion</string>
+    <string name="new_slot">Pick New Time Slot</string>
+    <string name="title_doc">Document Details</string>
+    <string name="title_bank">Bank Details</string>
+    <string name="title_license">Upload License</string>
+    <string name="title_recharge">Recharge Account</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">Invalid lat long used</string>
+    <string name="no_address_found">No address found</string>
+    <string name="no_location_data_provided">Location data not provided</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_verifiyotp">Account Verification</string>
+    <string name="app_passbook">Passbook</string>
+    <string name="title_transaction">Recharge Details</string>
+    <string name="confirm_str">Confirmation</string>
+
+    <string name="appointment">My Appointments</string>
+    <string name="subscribtion">Subscription</string>
+    <string name="recharge">Pay / Recharge</string>
+    <string name="callmanagement">Call Management</string>
+    <string name="addcustomer">Add Customer</string>
+    <string name="sellamc">Activate Simply Serv Plan</string>
+    <string name="addengineer">Add Engineer</string>
+    <string name="expert">Seek Expert Help</string>
+    <string name="testskills">Test Your Skills</string>
+    <string name="shareskills">Share Your Skills</string>
+    <string name="passbook">My Passbook</string>
+    <string name="scheme">Scheme</string>
+    <string name="skillupdate">Skill Update</string>
+    <string name="profile">Profile Update</string>
+    <string name="title_experthelp">Expert Help</string>
+    <string name="title_basics">Update Basic Details</string>
+    <string name="title_suscribtion">Subscription</string>
+    <string name="title_sellamc">Activate Simply Serv Plan</string>
+    <string name="viewamc">Activated Simply Serv Plan</string>
+    <string name="title_aprroved">Activated Simply Serv Plan</string>
+
+    <string name="addmore_string" translatable="false"><u>Add Parts</u></string>
+    <string name="removemore_string" translatable="false"><u>Remove parts</u></string>
+    <string name="addlabour" translatable="false"><u>Add Labour Charge</u></string>
+    <string name="confirm1" translatable="false">OK</string>
+    <string name="partner_link">Customer App</string>
+
+
+    <string-array name="type">
+        <item>Starter</item>
+        <item>Main Course</item>
+        <item>Desert</item>
+    </string-array>
+
+
+    <string-array name="group">
+        <item>Veg</item>
+        <item>Non Veg</item>
+    </string-array>
+
+
+    <string-array name="reason">
+        <item>Issue with on going order</item>
+        <item>Issue with past or delivered order</item>
+        <item>Payment issue with my order</item>
+        <item>Promo code did not apply for the on going order</item>
+        <item>Change the delivery address of the current order</item>
+        <item>Raise a complaint about delivery partner</item>
+        <item>Wrong food delivered</item>
+        <item>Submit food license</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="state">
+        <item>Karnataka</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>India</item>
+    </string-array>
+</resources>
+

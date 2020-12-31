@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:text="Select the Date"/>
+
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="100dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/date1"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_size_medium"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/roundcorner_button"
+                        android:text="19 Dec"/>
+
+                <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/dotted_boundry"
+                        android:text="20 Dec"/>
+
+                <TextView
+                        android:id="@+id/date3"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/dotted_boundry"
+                        android:text="21 Dec"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+
+                android:gravity="center_vertical"
+                android:text="Select the Time"/>
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:padding="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/time_slot1"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="8 AM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot2"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="9 AM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot3"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="10 AM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:padding="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/time_slot4"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="11 AM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot5"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="12 PM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot6"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="1 PM"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/time_slot7"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="2 PM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot8"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="3 PM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot9"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="4 PM"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/time_slot10"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="5 PM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot11"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="6 PM"/>
+
+                    <TextView
+                            android:id="@+id/time_slot12"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/dotted_boundry"
+                            android:text="7 PM"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+            <Button
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:id="@+id/confirm_bt"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_margin="5dp"
+                    android:text="@string/sign_confirm"
+                    android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

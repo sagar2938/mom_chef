@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:text="Upload Driving License"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/idproof_main_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/idproof_et"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/cell_border_edittext"
+                android:hint="Enter name as in License"
+                android:inputType="textFilter|textPostalAddress|textWebEmailAddress|textWebPassword|date|numberDecimal|numberPassword|numberSigned|phone|textAutoComplete|textAutoCorrect|textCapCharacters|textCapSentences|textCapWords|textImeMultiLine|textMultiLine|textNoSuggestions|time"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <EditText
+                android:id="@+id/idcode_et"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/cell_border_edittext"
+                android:hint="Enter License number"
+                android:inputType="textFilter|textPostalAddress|textWebEmailAddress|textWebPassword|date|numberDecimal|numberPassword|numberSigned|phone|textAutoComplete|textAutoCorrect|textCapCharacters|textCapSentences|textCapWords|textImeMultiLine|textMultiLine|textNoSuggestions|time"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/text_size_medium" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/edit_ll1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/dotted_boundry"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/edit_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10.0dip"
+                        android:src="@drawable/plus" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_ll1"
+                    android:layout_marginLeft="50.0dip"
+                    android:text="License Image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_txt"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15.0dip">
+
+        <Button
+            android:id="@+id/confirm_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:text="@string/confirmstring"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:background="#ffffffff"
+        android:clipToPadding="true"
+        android:visibility="visible"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="Id proof"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_txt"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/take_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/close"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:drawableLeft="@drawable/camera_icon"
+                android:drawablePadding="5.0dip"
+                android:gravity="fill"
+                android:text="Take Photo"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/small_txt"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/choose_from_library"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/close"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:drawableLeft="@drawable/gallery_icon"
+                android:drawablePadding="5.0dip"
+                android:gravity="fill"
+                android:text="Choose From Gallery "
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/small_txt"
+                android:typeface="serif" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

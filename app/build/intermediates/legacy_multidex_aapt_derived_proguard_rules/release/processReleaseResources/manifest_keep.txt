@@ -1,0 +1,4 @@
+# Referenced at /code_base/mom_new/mom_chef/app/build/intermediates/merged_manifests/release/AndroidManifest.xml:55
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /code_base/mom_new/mom_chef/app/build/intermediates/merged_manifests/release/AndroidManifest.xml:55
+-keep class mom.vender.com.network.ThisApp { <init>(); }

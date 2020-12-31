@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:background="@drawable/serv_main_img"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+    <TextView
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:id="@+id/animated_tv"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="You Deserve Better"
+            android:fontFamily="serif"
+            android:textAlignment="center"/>
+
+    <RelativeLayout
+            android:id="@+id/main_cardv"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/spinner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/cell_border_edittext"
+                android:layout_height="50dp">
+            <TextView
+                    android:textSize="18.0dip"
+                    android:id="@+id/mobile_number"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:background="@null"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="+ 91 "/>
+            <View android:layout_width="1dp"
+                  android:background="@color/light_grey"
+                  android:layout_height="wrap_content">
+
+            </View>
+
+            <EditText
+                    android:textSize="18.0dip"
+                    android:id="@+id/mobile_number_et"
+                    android:layout_width="fill_parent"
+                    android:textAlignment="center"
+                    android:background="@null"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Enter Mobile Number "
+                    android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_below="@+id/spinner"
+                      android:layout_marginLeft="20dp"
+                      android:orientation="horizontal"
+                      android:layout_marginRight="20dp"
+                      android:background="@drawable/cell_border_edittext"
+                      android:id="@+id/referal_ll"
+                      android:padding="2dp">
+
+            <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <Spinner
+                        android:id="@+id/referal_sp"
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:spinnerMode="dialog"
+                        android:layout_height="50dp" />
+
+            </LinearLayout>
+
+
+            <View android:layout_width="1dp"
+                  android:background="@color/light_grey"
+                  android:layout_height="match_parent">
+
+            </View>
+
+
+
+            <EditText
+                        android:textSize="18.0dip"
+                        android:id="@+id/referalcode_et"
+                        android:layout_width="fill_parent"
+                        android:textAlignment="center"
+                        android:background="@null"
+                        android:layout_height="50dp"
+                        android:hint="Enter Refer digits"
+                        android:inputType="number"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_below="@+id/referal_ll"
+                      android:layout_marginLeft="20dp"
+                      android:orientation="horizontal"
+                      android:layout_marginRight="20dp"
+                      android:background="@drawable/cell_border_edittext"
+                      android:id="@+id/lang_rl"
+                      android:layout_marginTop="10dp"
+                      android:padding="2dp">
+
+            <TextView
+                    android:id="@+id/jobdone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="serif"
+                    android:textSize="14dp"/>
+
+            <View android:layout_width="1dp"
+                  android:background="@color/light_grey"
+                  android:layout_height="match_parent">
+
+            </View>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <Spinner
+                        android:id="@+id/lang_sp"
+                        android:layout_width="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:spinnerMode="dialog"
+                        android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+                android:textSize="15dp"
+                android:textColor="@color/dark_grey"
+                android:layout_gravity="center"
+                android:layout_below="@+id/lang_rl"
+                android:id="@+id/ani_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="By signing up, you agree to Serv Simplified's"/>
+
+        <TextView
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/ani_tv"
+                android:id="@+id/termsandcondition_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"/>
+
+        <TextView
+                android:textSize="15dp"
+                android:textColor="@color/dark_grey"
+                android:layout_toRightOf="@+id/termsandcondition_tv"
+                android:layout_below="@+id/ani_tv"
+                android:id="@+id/terms_tv"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="and"/>
+
+        <TextView
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/terms_tv"
+                android:layout_below="@+id/ani_tv"
+                android:id="@+id/policy_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"/>
+
+
+        <LinearLayout
+                android:id="@+id/otp_button_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15.0dip"
+                android:layout_below="@+id/termsandcondition_tv">
+            <Button android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/white"
+                    android:id="@+id/getotp_btn"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/otpString"
+                    android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <TextView
+                android:textSize="@dimen/text_size_medium"
+                android:id="@+id/signup_tv"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/otp_button_ll"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="Already a user ?  Login"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".sharemodule.ShareActivity">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/refer_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="0dp">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white">
+
+                    <TextView
+                            android:id="@+id/refrealc_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/getearn_tv"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="@dimen/text_size_medium"
+                            android:text="Serv Simplified Wallet"/>
+
+                    <TextView
+                            android:id="@+id/refrealcode_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/refrealc_tv"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginBottom="@dimen/text_size_small"
+                            android:textSize="@dimen/text_size_large"
+                            android:text="\u20B9"/>
+
+                    <TextView
+                            android:id="@+id/available_balance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/refrealcode_tv"
+                            android:layout_below="@+id/refrealc_tv"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginBottom="@dimen/text_size_small"
+                            android:textSize="@dimen/text_size_large"
+                            android:text="0"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:layout_width="match_parent"
+                          android:id="@+id/color_line1"
+                          android:background="@color/colorPrimaryDark"
+                          android:layout_below="@+id/refer_cv"
+                          android:layout_height="6dp"
+                          android:orientation="horizontal">
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:id="@+id/color_line2"
+                          android:background="@color/blue"
+                          android:layout_below="@+id/color_line1"
+                          android:layout_height="6dp"
+                          android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginBottom="5dp"
+                          android:orientation="vertical"
+                          android:layout_below="@+id/color_line2">
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium"
+                        android:text="Recents"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/engineer_list_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

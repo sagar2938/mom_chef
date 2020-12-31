@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Update Parts Details"
+                      android:textAlignment="center"
+                      android:fontFamily="serif"
+                      android:textSize="@dimen/text_size_medium"
+                      android:layout_marginTop="3dp"
+                      android:layout_margin="10dp"
+                      android:layout_marginBottom="10dp"/>
+
+
+
+            <LinearLayout
+                    android:id="@+id/complete_ui_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cell_border_edittext"
+                                android:layout_margin="3dp"
+                                android:padding="2dp">
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="1dp"
+                                  android:background="@color/light_grey">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/product_header_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightGray"
+                            android:padding="5dp">
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight=".5"
+                                  android:textAlignment="center"
+                                  android:textColor="@color/black"
+                                  android:text="Parts Name"/>
+
+                        <LinearLayout android:layout_width="1dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginLeft="10dp"
+                                      android:background="@color/light_grey">
+
+                        </LinearLayout>
+
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="7dp"
+                                  android:layout_weight=".5"
+                                  android:textAlignment="center"
+                                  android:layout_marginRight="7dp"
+                                  android:textColor="@color/black"
+                                  android:text="Price"/>
+
+                        <LinearLayout android:layout_width="1dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginLeft="10dp"
+                                      android:background="@color/light_grey">
+
+                        </LinearLayout>
+
+
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginRight="7dp"
+                                  android:layout_weight=".5"
+                                  android:layout_marginLeft="7dp"
+                                  android:textAlignment="center"
+                                  android:textColor="@color/black"
+                                  android:text="Tot.Price (Including GST)"/>
+
+                        <LinearLayout android:layout_width="1dp"
+                                      android:layout_height="match_parent"
+                                      android:background="@color/light_grey">
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/parts_add_ll_1"
+                            android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_below="@+id/product_header_ll"
+                                  android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:id="@+id/select_parts_ll1"
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+                        <Spinner
+                                android:id="@+id/select_parts_sp1"
+                                android:layout_width="fill_parent"
+                                android:background="@drawable/cell_border_edittext"
+                                android:spinnerMode="dialog"
+                                android:layout_height="40dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                            android:id="@+id/price_value_et1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"
+                            android:gravity="center_vertical"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_small"
+                            android:background="@drawable/cell_border_edittext"
+                            android:fontFamily="serif"/>
+
+
+                        <EditText
+                                android:id="@+id/price_value_etit1"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                        <TextView
+                            android:id="@+id/price_value_final1"
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="@dimen/text_size_small"
+                            android:background="@drawable/cell_border_edittext"
+                            android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                            android:id="@+id/parts_add_ll_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/parts_add_ll_1"
+                            android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/select_parts_ll2"
+                                android:orientation="vertical"
+                                android:layout_weight=".5"
+                                android:layout_margin="10dp">
+                            <Spinner
+                                    android:id="@+id/select_parts_sp2"
+                                    android:layout_width="fill_parent"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                                android:id="@+id/price_value_et2"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+                        <EditText
+                                android:id="@+id/price_value_etit2"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                        <TextView
+                                android:id="@+id/price_value_final2"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/parts_add_ll_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/parts_add_ll_2"
+                            android:orientation="horizontal">
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:id="@+id/select_parts_ll3"
+                                android:orientation="vertical">
+
+                            <Spinner
+                                    android:id="@+id/select_parts_sp3"
+                                    android:layout_width="fill_parent"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                                android:id="@+id/price_value_et3"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+                        <EditText
+                                android:id="@+id/price_value_etit3"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                        <TextView
+                                android:id="@+id/price_value_final3"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/parts_add_ll_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/parts_add_ll_3"
+                            android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:id="@+id/select_parts_ll4"
+                                android:orientation="vertical">
+                            <Spinner
+                                    android:id="@+id/select_parts_sp4"
+                                    android:layout_width="fill_parent"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                                android:id="@+id/price_value_et4"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+                        <EditText
+                                android:id="@+id/price_value_etit4"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                        <TextView
+                                android:id="@+id/price_value_final4"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/parts_add_ll_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/parts_add_ll_4"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:id="@+id/select_parts_ll5"
+                                android:orientation="vertical">
+                            <Spinner
+                                    android:id="@+id/select_parts_sp5"
+                                    android:layout_width="fill_parent"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                                android:id="@+id/price_value_et5"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/text_size_small"
+                                android:textAlignment="center"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+                        <EditText
+                                android:id="@+id/price_value_etit5"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="gone"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                        <TextView
+                                android:id="@+id/price_value_final5"
+                                android:layout_width="0dp"
+                                android:layout_weight=".5"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:visibility="visible"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:textSize="@dimen/text_size_small"
+                                android:background="@drawable/cell_border_edittext"
+                                android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+
+
+                        <LinearLayout
+                                android:id="@+id/product_header_ll1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/lightGray"
+                                android:layout_below="@+id/parts_add_ll_5"
+                                android:padding="5dp">
+                            <TextView android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight=".5"
+                                      android:textAlignment="center"
+                                      android:textColor="@color/black"
+                                      android:text="Labour Details"/>
+
+                            <LinearLayout android:layout_width="1dp"
+                                          android:layout_height="match_parent"
+                                          android:layout_marginLeft="10dp"
+                                          android:background="@color/light_grey">
+
+                            </LinearLayout>
+
+
+                            <TextView android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight=".5"
+                                      android:layout_marginLeft="5dp"
+                                      android:textAlignment="center"
+                                      android:layout_marginRight="5dp"
+                                      android:textColor="@color/black"
+                                      android:text="Labour Charge"/>
+
+                            <LinearLayout android:layout_width="1dp"
+                                          android:layout_height="match_parent"
+                                          android:layout_marginLeft="10dp"
+                                          android:background="@color/light_grey">
+
+                            </LinearLayout>
+
+
+                            <TextView android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:layout_weight=".5"
+                                      android:textAlignment="center"
+                                      android:layout_marginRight="7dp"
+                                      android:layout_marginLeft="7dp"
+                                      android:textColor="@color/black"
+                                      android:text="Tot. Price (Including GST)"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/select_description_labour"
+                                android:layout_below="@+id/product_header_ll1"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp">
+
+
+                            <Spinner
+                                    android:id="@+id/description_labour_sp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:spinnerMode="dialog"
+                                    android:layout_height="40dp"/>
+
+                            <TextView
+                                    android:id="@+id/labour_charge_et"
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:textAlignment="center"
+                                    android:visibility="visible"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:fontFamily="serif"/>
+
+                            <EditText
+                                    android:id="@+id/labour_charge_edit"
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".5"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:visibility="gone"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:fontFamily="serif"/>
+
+
+
+                            <TextView
+                                    android:id="@+id/labour_total_tv"
+                                    android:layout_width="0dp"
+                                    android:text="0"
+                                    android:layout_weight=".5"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:visibility="visible"
+                                    android:textSize="@dimen/text_size_small"
+                                    android:background="@drawable/cell_border_edittext"
+                                    android:fontFamily="serif"/>
+
+
+                        </LinearLayout>
+
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="1dp"
+                                  android:layout_below="@+id/select_description_labour"
+                                  android:background="@color/light_grey">
+
+                    </LinearLayout>
+
+                    <TextView
+
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Amount to be paid *  (Including GST)"
+                            android:layout_below="@+id/select_description_labour"
+                            android:fontFamily="serif"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginLeft="15dp"/>
+
+
+                    <TextView
+                            android:id="@+id/invoice_total_tv"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/select_description_labour"
+                            android:layout_alignParentRight="true"
+                            android:visibility="visible"
+                            android:textSize="@dimen/text_size_small"
+                            android:background="@drawable/cell_border_edittext"
+                            android:padding="10dp"
+                            android:fontFamily="serif"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:id="@+id/payment_mode_amc_ll"
+                              android:layout_marginTop="10dp"
+                              android:layout_height="50dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textSize="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="serif"
+                            android:text="Payment through AMC"
+                            android:layout_marginLeft="15dp"/>
+
+                    <ImageView android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:layout_marginLeft="20dp"
+                               android:layout_gravity="center_vertical"
+                               android:src="@drawable/warranty_under"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:visibility="visible"
+                              android:layout_marginTop="15dp"
+                              android:padding="2dp">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Remarks *"
+                              android:textAlignment="center"
+                              android:fontFamily="serif"
+                              android:textSize="15dp"
+                              android:layout_marginTop="3dp"
+                              android:layout_marginLeft="15dp"/>
+
+
+                    <EditText
+
+                            android:id="@+id/work_details_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight=".5"
+                            android:hint="Enter Remarks"
+                            android:textSize="@dimen/text_size_small"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:background="@drawable/cell_border_edittext"
+                            android:textAlignment="center"
+                            android:fontFamily="serif"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:visibility="visible"
+                              android:layout_marginTop="5dp"
+                              android:padding="2dp">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Defective Parts *"
+                              android:textAlignment="center"
+                              android:fontFamily="serif"
+                              android:textSize="15dp"
+                              android:layout_marginTop="3dp"
+                              android:layout_marginLeft="15dp"/>
+
+
+                    <EditText
+                            android:id="@+id/defective_parts_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight=".5"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="Enter defective parts"
+                            android:textSize="@dimen/text_size_small"
+                            android:background="@drawable/cell_border_edittext"
+                            android:textAlignment="center"
+                            android:fontFamily="serif"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:background="@color/lightGray">
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="10dp"
+                              android:textAlignment="center"
+                              android:textColor="@color/black"
+                              android:text="Parts Picture "/>
+
+
+
+                </LinearLayout>
+
+
+
+                    <RelativeLayout
+                            android:id="@+id/upload_parts_ll"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/cell_border_edittext"
+                            android:padding="10dp">
+
+                        <ImageView android:layout_width="50dp"
+                                   android:layout_height="50dp"
+                                   android:layout_marginRight="10dp"
+                                   android:id="@+id/click_product_iv"
+                                   android:src="@drawable/click_icon"/>
+
+                        <ImageView android:layout_width="wrap_content"
+                                   android:layout_height="match_parent"
+                                   android:id="@+id/preview_product_iv"
+                                   android:visibility="gone"
+                                   android:layout_toRightOf="@+id/click_product_iv"
+                                   android:layout_gravity="center_horizontal"
+                        />
+
+
+                    </RelativeLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:id="@+id/payment_mode_ll"
+                              android:layout_marginTop="10dp"
+                              android:visibility="gone"
+                              android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:fontFamily="serif"
+                            android:text="Select Payment mode"
+                            android:layout_marginLeft="15dp"/>
+
+                    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/group_weekdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            app:tbgChildSpacing="auto">
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:tbgMarkerColor="@color/colorPrimary"
+                                android:layout_margin="5dp"
+                                android:text="Online Payment"/>
+
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/advance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:tbgMarkerColor="@color/colorPrimary"
+
+                                android:layout_margin="5dp"
+                                android:text="Cash Payment"/>
+
+                        <!--...-->
+
+                    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#e2e2e2"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/move_back_bt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                app:cardCornerRadius="4dp"
+                                android:layout_gravity="center"
+                                android:layout_below="@+id/attendence_rv"
+                                app:cardBackgroundColor="@color/colorPrimary"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="30dp">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="33dp"
+                                    android:gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/white"
+                                    android:typeface="serif"
+                                    android:text="Back"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                        <androidx.cardview.widget.CardView
+                                android:id="@+id/move_next_bt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                app:cardCornerRadius="4dp"
+                                android:layout_gravity="center"
+                                android:layout_below="@+id/attendence_rv"
+                                app:cardBackgroundColor="@color/colorPrimary"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="15dp">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="33dp"
+                                    android:gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/white"
+                                    android:typeface="serif"
+                                    android:text="Submit"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

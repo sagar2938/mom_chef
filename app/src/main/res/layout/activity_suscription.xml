@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".recharge_module.RechargeActivity">
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/refer_cv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="2dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_iv"
+                    android:layout_width="80dp"
+                    android:src="@drawable/img"
+                    android:layout_height="80dp"/>
+
+            <TextView
+                    android:id="@+id/cutomer_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/profile_iv"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text=""/>
+
+
+            <TextView
+                    android:id="@+id/credit_balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_grey"
+                    android:layout_below="@+id/cutomer_name_tv"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/profile_iv"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="Buy one year of subscription to \nuse Serv Simplified services."/>
+
+            <TextView
+                    android:id="@+id/daysleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/blue"
+                    android:layout_below="@+id/credit_balance_tv"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text=""/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+            android:id="@+id/recharge_bt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/credit_balance_tv"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundcorner_button"
+            android:text="Buy Now"/>
+
+
+    <Button
+            android:id="@+id/invoice"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/credit_balance_tv"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundcorner_button"
+            android:text="Invoice"/>
+
+
+
+</LinearLayout>

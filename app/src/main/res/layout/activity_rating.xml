@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <RelativeLayout
+            android:layout_gravity="left"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5.0dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage_iv"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/img"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1.0dip">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text=""
+                android:layout_toRightOf="@+id/profileimage_iv"
+        />
+        <TextView
+                android:id="@+id/userrating_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/profileimage_iv"
+                android:layout_below="@+id/username_tv"
+        />
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/userrating_tv"
+                android:src="@drawable/star_icon"
+                android:layout_below="@+id/username_tv"
+        />
+
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:background="#ffffff"
+                  android:layout_margin="5dp">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text="Comments "/>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/comments_1"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text=" "/>
+        <View android:layout_width="match_parent"
+              android:layout_marginLeft="20dp"
+              android:background="@color/light_grey"
+              android:layout_height="1dp">
+
+        </View>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/comments_2"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text=" "/>
+        <View android:layout_width="match_parent"
+              android:layout_marginLeft="20dp"
+              android:background="@color/light_grey"
+              android:layout_height="1dp">
+
+        </View>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/comments_3"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text=""/>
+        <View android:layout_width="match_parent"
+              android:layout_marginLeft="20dp"
+              android:background="@color/light_grey"
+              android:layout_height="1dp">
+
+        </View>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/comments_4"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text=""/>
+        <View android:layout_width="match_parent"
+              android:layout_marginLeft="20dp"
+              android:background="@color/light_grey"
+              android:layout_height="1dp">
+
+        </View>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/comments_5"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="@dimen/text_size_medium"
+                  android:text=""/>
+
+    </LinearLayout>
+    <Button android:textColor="@color/white"
+            android:id="@+id/terms_bt"
+            android:visibility="gone"
+            android:background="@drawable/roundcorner_button"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:layout_margin="10.0dip"
+            android:text="Save"
+            android:layout_below="@+id/terms_ll"
+            android:textAllCaps="false"/>
+
+</LinearLayout>

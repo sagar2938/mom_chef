@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:background="@color/white"
+      android:layout_height="wrap_content">
+      <ImageView
+          android:id="@+id/imageView"
+          android:background="@drawable/serv_main_img"
+          android:layout_width="100dp"
+          android:layout_height="30dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="30dp"/>
+
+      <TextView
+          android:textSize="15dp"
+          android:textColor="@color/black"
+          android:layout_gravity="center"
+          android:id="@+id/animated_tv"
+          android:layout_marginTop="10dp"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:text="You Deserve Better"
+          android:fontFamily="serif"
+          android:textAlignment="center"/>
+  </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="We have sent you a 4 digit verification code"></TextView>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        android:layout_marginTop="10dp"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"
+        app:pinBackground="@drawable/cell_border_botton"
+        app:pinHeight="50dp"
+        app:pinLength="4"
+        app:pinWidth="50dp" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="false"
+        android:background="@drawable/ripple_effect_register"
+        android:textSize="16dp"
+        android:text="Submit" />
+
+</LinearLayout>

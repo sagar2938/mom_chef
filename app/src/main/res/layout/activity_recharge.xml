@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".recharge_module.RechargeActivity">
+
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/refer_cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="2dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="2dp">
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@color/white">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile_iv"
+                                android:layout_width="80dp"
+                                   android:layout_height="80dp"
+                                   android:src="@drawable/img"/>
+
+                        <TextView
+                                android:id="@+id/cutomer_name_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toRightOf="@+id/profile_iv"
+                                android:fontFamily="serif"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_medium"
+                                android:text=""/>
+
+                        <TextView
+                                android:id="@+id/rating_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_toRightOf="@+id/profile_iv"
+                                android:layout_below="@+id/cutomer_name_tv"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="@dimen/text_size_medium"
+                                android:text="0 ratings in last 50 jobs"/>
+
+                        <TextView
+                                android:id="@+id/credit_balance_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rating_tv"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/profile_iv"
+                                android:textSize="@dimen/text_size_medium"
+                                android:text=""/>
+
+                        <TextView
+                                android:id="@+id/lowbalance_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/credit_balance_tv"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginBottom="@dimen/text_size_small"
+                                android:textSize="@dimen/text_size_medium"
+                                android:text="Low Credits Balance"/>
+
+                        <Button
+                                android:id="@+id/recharge_bt"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:textColor="@color/white"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_below="@+id/credit_balance_tv"
+                                android:textSize="16dp"
+                                android:textAllCaps="false"
+                                android:background="@drawable/roundcorner_button"
+                                android:text="Recharge"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/recharge_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+
+
+            <TextView
+                    android:id="@+id/rech_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="Recharge Your Account"/>
+
+            <TextView
+                    android:id="@+id/balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rech_tv"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="Amount ( \u20B9 )"/>
+
+            <EditText
+                    android:id="@+id/enter_ammunt_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:inputType="number"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/balance_tv"/>
+
+            <TextView
+                    android:id="@+id/minimum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enter_ammunt_et"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="@dimen/text_size_small"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="Minimum Recharge amount : Rs.500 &amp; therefter in multiples of 500 only"/>
+
+
+            <EditText
+                    android:id="@+id/promocode_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/apply_bt"
+                    android:textSize="14dp"
+                    android:paddingTop="5dp"
+                    android:hint="Have a promocode ? Enter here"
+                    android:layout_below="@+id/minimum_tv"/>
+
+            <Button
+                    android:id="@+id/apply_bt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/minimum_tv"
+                    android:textSize="14dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/roundcorner_button"
+                    android:text="Apply"/>
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                    android:id="@+id/group_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/minimum_tv"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:tbgChildSpacing="auto">
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                        android:id="@+id/toggle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tbgMarkerColor="@color/colorPrimary"
+
+                        android:layout_margin="5dp"
+                        android:text="500"/>
+
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                        android:id="@+id/toggle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tbgMarkerColor="@color/colorPrimary"
+                        android:layout_margin="5dp"
+                        android:text="1000"/>
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                        android:id="@+id/toggle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tbgMarkerColor="@color/colorPrimary"
+                        android:layout_margin="5dp"
+                        android:text="1500"/>
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                        android:id="@+id/toggle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tbgMarkerColor="@color/colorPrimary"
+                        android:layout_margin="5dp"
+                        android:text="2500"/>
+
+                <!--...-->
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+            <Button
+                    android:id="@+id/proceedtopay_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_amount"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textAllCaps="false"
+                    android:text="Proceed To Pay"
+                    android:background="@drawable/roundcorner_button"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ss_launcher" />
+
+        <LinearLayout
+            android:id="@+id/login_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animated_tv"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:text="Already user ?  Log In"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_ll"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:text="New user ?  Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/animated_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="You Deserve Better"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+
+    <attr name="fontType" format="enum">
+        <enum name="OpenSans_Bold" value="0" />
+        <enum name="OpenSans_BoldItalic" value="1" />
+        <enum name="OpenSans_Italic" value="2" />
+        <enum name="OpenSans_Light" value="3" />
+        <enum name="OpenSans_LightItalic" value="4" />
+        <enum name="OpenSans_Regular" value="5" />
+        <enum name="OpenSans_SemiBold" value="6" />
+    </attr>
+
+    <declare-styleable name="BuzzFonts">
+        <attr name="fontType"/>
+            <attr name="calendarTitleTextColor" format="color" />
+            <attr name="dayOfWeekTextColor" format="color" />
+            <attr name="dayOfMonthTextColor" format="color" />
+            <attr name="calendarBackgroundColor" format="color" />
+            <attr name="disabledDayBackgroundColor" format="color" />
+            <attr name="disabledDayTextColor" format="color" />
+            <attr name="selectedDayBackgroundColor" format="color" />
+            <attr name="selectedDayTextColor" format="color" />
+            <attr name="weekLayoutBackgroundColor" format="color" />
+            <attr name="titleLayoutBackgroundColor" format="color" />
+            <attr name="currentDayOfMonthColor" format="color" />
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ZoomageView">
+        <attr name="zoomage_zoomable" format="boolean" />
+        <attr name="zoomage_translatable" format="boolean" />
+        <attr name="zoomage_restrictBounds" format="boolean" />
+        <attr name="zoomage_animateOnReset" format="boolean" />
+        <attr name="zoomage_doubleTapToZoom" format="boolean" />
+        <attr name="zoomage_doubleTapToZoomScaleFactor" format="float" />
+        <attr name="zoomage_autoCenter" format="boolean" />
+        <attr name="zoomage_minScale" format="float" />
+        <attr name="zoomage_maxScale" format="float" />
+        <attr name="zoomage_autoResetMode" format="enum">
+            <enum name="UNDER" value="0" />
+            <enum name="OVER" value="1" />
+            <enum name="ALWAYS" value="2" />
+            <enum name="NEVER" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

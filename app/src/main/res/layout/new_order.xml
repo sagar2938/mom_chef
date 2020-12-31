@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/fromAddress"
+            android:layout_gravity="center_horizontal" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:visibility="gone"
+            android:id="@+id/tvTo"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:visibility="gone"
+            android:id="@+id/tvToAddress"
+            android:layout_gravity="center_horizontal" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estimated_distance"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEstimatedDistance"
+            android:layout_gravity="center_horizontal"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model No. "
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLabourRequired"
+            android:layout_gravity="center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/estimated_fare"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEstimatedFare"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+    >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/confirm"
+                android:id="@+id/bPositive"
+                android:textColor="@color/darkGreen"
+                android:background="@color/white"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel"
+                android:id="@+id/bNegative"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <RelativeLayout android:layout_gravity="left"
+                    android:background="#ffffffff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dip">
+        <TextView android:textSize="@dimen/text_size_medium"
+                  android:textColor="@color/black"
+                  android:id="@+id/gethelp_tv"
+                  android:background="@drawable/cell_border_edittext"
+                  android:padding="10.0dip"
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10.0dip"
+                  android:text="Get Help "
+                  android:layout_alignParentRight="true"/>
+        />
+        <TextView android:textSize="18.0dip"
+                  android:textStyle="normal"
+                  android:textColor="@color/black"
+                  android:id="@+id/name_tv"
+                  android:background="#ffffffff"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20.0dip"
+                  android:layout_marginTop="20.0dip"
+                  android:text="Would you like to have following details from you."
+                  android:layout_toRightOf="@+id/profileimage_iv"
+                  android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:id="@+id/myrating_rl"
+                        android:background="#ffffffff"
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/black"
+                      android:id="@+id/identity_tv"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50.0dip"
+                      android:layout_marginTop="15.0dip"
+                      android:layout_marginBottom="15dp"
+                      android:text="Identity Proof "/>
+            <ImageView android:id="@+id/identity_iv"
+                       android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"
+                       android:layout_margin="10.0dip"
+                       android:src="@drawable/grey_tick_img"
+                       android:layout_alignParentLeft="true"/>
+
+            <Button android:textColor="@color/white"
+                    android:id="@+id/identity_bt"
+                    android:visibility="visible"
+                    android:background="@drawable/roundcorner_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:padding="10dp"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="Upload Proof"
+                    android:layout_below="@+id/identity_tv"
+                    android:textAllCaps="false"/>
+            <View android:background="#ffe0e0e0"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1.0dip"
+                  android:layout_marginLeft="40.0dip"
+                  android:layout_below="@+id/identity_bt"/>
+        </RelativeLayout>
+        <View android:background="#ffe0e0e0"
+              android:layout_width="fill_parent"
+              android:layout_height="1.0dip"/>
+        <RelativeLayout android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:id="@+id/idenetity_rl"
+                        android:background="#ffffffff"
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_below="@+id/myrating_rl">
+            <TextView android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/black"
+                      android:id="@+id/personal_tv"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50.0dip"
+                      android:layout_marginTop="5.0dip"
+                      android:layout_marginBottom="5.0dip"
+                      android:text="Personal Details  "
+                      android:inputType="textCapSentences"/>
+            <ImageView android:id="@+id/personal_iv"
+                       android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"
+                       android:layout_margin="10.0dip"
+                       android:src="@drawable/grey_tick_img"
+                       android:layout_alignParentLeft="true"/>
+            <Button android:textColor="@color/white"
+                    android:id="@+id/details_bt"
+                    android:background="@drawable/roundcorner_button"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="Enter Your Details"
+                    android:layout_below="@+id/personal_tv"
+                    android:textAllCaps="false"/>
+            <View android:background="#ffe0e0e0"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1.0dip"
+                  android:layout_marginLeft="40.0dip"
+                  android:layout_below="@+id/details_bt"/>
+        </RelativeLayout>
+        <View android:id="@+id/personal_view"
+              android:background="#ffe0e0e0"
+              android:layout_width="1.0dip"
+              android:layout_height="65.0dip"
+              android:layout_marginLeft="25.0dip"
+              android:layout_marginTop="35.0dip"
+              android:layout_below="@+id/myrating_rl"/>
+        <View android:id="@+id/proof_view"
+              android:background="#ffe0e0e0"
+              android:layout_width="1.0dip"
+              android:layout_height="65.0dip"
+              android:layout_marginLeft="25.0dip"
+              android:layout_marginTop="35.0dip"/>
+        <RelativeLayout android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:id="@+id/award_rl"
+                        android:background="#ffffffff"
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/idenetity_rl">
+            <TextView android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/black"
+                      android:id="@+id/address_tv"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50.0dip"
+                      android:layout_marginTop="5.0dip"
+                      android:layout_marginBottom="5.0dip"
+                      android:text="Current Address"
+                      android:inputType="textCapSentences"/>
+            <ImageView android:id="@+id/address_iv" android:layout_width="20.0dip" android:layout_height="20.0dip"
+                       android:layout_margin="10.0dip" android:src="@drawable/grey_tick_img"
+                       android:layout_alignParentLeft="true"/>
+            <Button android:textColor="@color/white"
+                    android:id="@+id/address_bt"
+                    android:background="@drawable/roundcorner_button"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="Enter Your Address"
+                    android:layout_below="@+id/address_tv"
+                    android:textAllCaps="false"/>
+            <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="1.0dip"
+                  android:layout_marginLeft="40.0dip" android:layout_below="@+id/address_bt"/>
+        </RelativeLayout>
+        <View android:id="@+id/address_view" android:background="#ffe0e0e0" android:layout_width="1.0dip"
+              android:layout_height="75.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="33.0dip"
+              android:layout_below="@+id/idenetity_rl"/>
+
+        <RelativeLayout android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:id="@+id/mylicense_rl"
+                        android:background="#ffffffff"
+                        android:padding="5.0dip"
+                        android:layout_below="@+id/award_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/black"
+                      android:id="@+id/license_tv"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50.0dip"
+                      android:layout_marginTop="15.0dip"
+                      android:layout_marginBottom="15dp"
+                      android:text="Driving License"/>
+            <ImageView android:id="@+id/license_iv"
+                       android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"
+                       android:layout_margin="10.0dip"
+                       android:src="@drawable/grey_tick_img"
+                       android:layout_alignParentLeft="true"/>
+
+            <Button android:textColor="@color/white"
+                    android:id="@+id/license_bt"
+                    android:visibility="visible"
+                    android:background="@drawable/roundcorner_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:padding="10dp"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="Upload Proof"
+                    android:layout_below="@+id/license_tv"
+                    android:textAllCaps="false"/>
+            <View android:background="#ffe0e0e0"
+                  android:layout_width="fill_parent"
+                  android:layout_height="1.0dip"
+                  android:layout_marginLeft="40.0dip"
+                  android:layout_below="@+id/license_bt"/>
+        </RelativeLayout>
+        <View android:id="@+id/license_view" android:background="#ffe0e0e0" android:layout_width="1.0dip"
+              android:layout_height="75.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="33.0dip"
+              android:layout_below="@+id/award_rl"/>
+
+        <RelativeLayout android:gravity="center_vertical"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:id="@+id/declaration_rl"
+                        android:background="#ffffffff"
+                        android:padding="5.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mylicense_rl">
+            <TextView android:textSize="@dimen/text_size_medium"
+                      android:textColor="@color/black"
+                      android:id="@+id/declaration_tv"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50.0dip"
+                      android:layout_marginTop="5.0dip"
+                      android:layout_marginBottom="5.0dip"
+                      android:text="Declaration"
+                      android:inputType="textCapSentences"/>
+            <ImageView android:id="@+id/declaration_iv"
+                       android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"
+                       android:layout_margin="10.0dip"
+                       android:src="@drawable/grey_tick_img"
+                       android:layout_alignParentLeft="true"/>
+            <Button android:textColor="@color/white"
+                    android:id="@+id/declaration_bt"
+                    android:background="@drawable/roundcorner_button"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="Enter Declaration"
+                    android:layout_below="@+id/declaration_tv"
+                    android:textAllCaps="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

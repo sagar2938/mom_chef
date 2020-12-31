@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_gravity="left"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip">
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage_iv"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/mom1"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1.0dip"/>
+        />
+        <TextView
+                android:textSize="20.0dip"
+                android:textColor="@color/black"
+                android:id="@+id/product_tv"
+                android:background="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="0.0dip"
+                android:text="Shailesh Diwakar"
+                android:layout_toRightOf="@+id/profileimage_iv"/>
+        <TextView android:textSize="@dimen/text_size_medium"
+                  android:textColor="@color/black"
+                  android:background="#ffffffff"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20.0dip"
+                  android:text="Veg"
+                  android:id="@+id/model_tv"
+                  android:layout_toRightOf="@+id/profileimage_iv"
+                  android:layout_below="@+id/product_tv"/>
+
+        <TextView android:textSize="@dimen/text_size_medium"
+                  android:textColor="@color/black"
+                  android:background="#ffffffff"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="20.0dip"
+                  android:text="MALAI KOFTA"
+                  android:id="@+id/problem_tv"
+                  android:layout_toRightOf="@+id/profileimage_iv"
+                  android:layout_below="@+id/model_tv"/>
+
+
+
+        <TextView android:textSize="@dimen/text_size_medium"
+                  android:textColor="@color/black"
+                  android:background="#ffffffff"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="20.0dip"
+                  android:text="MATAR PANEER"
+                  android:id="@+id/address_tv"
+                  android:layout_toRightOf="@+id/profileimage_iv"
+                  android:layout_below="@+id/problem_tv"/>
+        <View
+                android:id="@+id/line"
+                android:layout_marginTop="20dp"
+                android:background="#ffe0e0e0"
+                android:layout_below="@+id/address_tv"
+              android:layout_width="fill_parent"
+              android:layout_height="1.0dip"/>
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/line"
+                android:orientation="horizontal"
+
+        >
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/confirm"
+                    android:id="@+id/bPositive"
+                    android:textColor="@color/darkGreen"
+                    android:background="@color/white"/>
+
+            <View
+                    android:background="#ffe0e0e0"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/cancel"
+                    android:id="@+id/bNegative"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/white"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
